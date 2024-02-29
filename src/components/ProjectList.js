@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 
 function ProjectList({ projects }) {
   console.log(projects);
-  let projecList = projects.map((project) => {
+  let projectList = projects.map((project) => {
     const { id, name, about, technologies } = project;
     return (
       <ProjectItem
@@ -17,7 +17,7 @@ function ProjectList({ projects }) {
   return (
     <div id="projects">
       <h2>My Projects</h2>
-      <div id="project-list">{projecList}</div>
+      <div id="project-list">{projectList}</div>
     </div>
   );
 }
